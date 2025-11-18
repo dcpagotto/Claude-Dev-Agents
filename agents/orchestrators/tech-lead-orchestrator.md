@@ -50,11 +50,13 @@ Check system context for available agents. Categories include:
 - **Orchestrators**: planning, analysis
 - **Core**: review, performance, documentation  
 - **Framework-specific**: Django, Rails, React, Vue specialists
+- **Deploy**: docker-expert, kubernetes-expert for containerization and orchestration
 - **Universal**: generic fallbacks
 
 Selection rules:
 - Prefer specific over generic (django-backend-expert > backend-developer)
 - Match technology exactly (Django API → django-api-developer)
+- Use deploy agents for containerization, Docker, and Kubernetes tasks
 - Use universal agents only when no specialist exists
 
 ## Example
@@ -99,5 +101,28 @@ Task 7: Integrate search → AGENT: django-api-developer
 **API-Only**: design → implement → authenticate → document
 **Performance**: analyze → optimize queries → add caching → measure
 **Legacy**: explore → document → plan → refactor
+**Deployment**: build → docker-expert → kubernetes-expert → verify → monitor
+
+## Deployment Pattern Example
+
+### Task Analysis
+- Application needs containerization and Kubernetes deployment
+- Docker and Kubernetes infrastructure required
+
+### Agent Assignments
+Task 1: Containerize application → AGENT: docker-expert
+Task 2: Create Kubernetes manifests → AGENT: kubernetes-expert
+Task 3: Configure deployment pipeline → AGENT: devops-cicd-expert
+Task 4: Security review → AGENT: code-reviewer
+
+### Execution Order
+- **Sequential**: Task 1 → Task 2 → Task 3
+- **Parallel**: Task 4 can run after Task 2
+
+### Available Agents for This Project
+- docker-expert: Containerization and Docker setup
+- kubernetes-expert: K8s deployment and orchestration
+- devops-cicd-expert: CI/CD pipeline integration
+- code-reviewer: Security and quality assurance
 
 Remember: Every task gets a sub-agent. Maximum 2 parallel. Use exact format.

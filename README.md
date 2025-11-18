@@ -107,6 +107,10 @@ The @agent-team-configurator automatically sets up your perfect AI development t
   - **[Nuxt Expert](agents/specialized/vue/vue-nuxt-expert.md)** - SSR, SSG, and full-stack Nuxt applications
   - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state architecture
 
+### 🚀 Deploy Specialists (2 agents)
+- **[Docker Expert](agents/specialized/deploy/docker-expert.md)** - Containerization, Docker Compose, multi-stage builds, and remote deployment via SSH
+- **[Kubernetes Expert](agents/specialized/deploy/kubernetes-expert.md)** - Cluster management, deployments, Helm charts, and cloud-native orchestration
+
 ### 🌐 Universal Experts (4 agents)
 - **[Backend Developer](agents/universal/backend-developer.md)** - Polyglot backend development across multiple languages and frameworks
 - **[Frontend Developer](agents/universal/frontend-developer.md)** - Modern web technologies and responsive design for any framework
@@ -119,7 +123,7 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 - **[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
 - **[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive READMEs, API specs, and technical documentation
 
-**Total: 24 specialized agents** working together to build your projects!
+**Total: 26 specialized agents** working together to build your projects!
 
 [Browse all agents →](agents/)
 

@@ -18,6 +18,8 @@ Provide a structured snapshot of the project’s languages, frameworks, architec
 
    * List package / build files (`composer.json`, `package.json`, etc.).
    * Sample source files to infer primary language.
+   * Check for Docker files (`Dockerfile`, `docker-compose.yml`, `.dockerignore`).
+   * Check for Kubernetes manifests (`k8s/`, `*.yaml` in root, `helm/`).
 
 2. **Deep Analysis**
 
@@ -38,7 +40,14 @@ Provide a structured snapshot of the project’s languages, frameworks, architec
    …
    ## Architecture Patterns
    …
+   ## Deployment Infrastructure
+   - Docker: [detected/not detected]
+   - Kubernetes: [detected/not detected]
+   - Container Registry: [if detected]
+   …
    ## Specialist Recommendations
+   - Framework specialists: [list]
+   - Deploy specialists: docker-expert, kubernetes-expert [if Docker/K8s detected]
    …
    ## Key Findings
    …
@@ -60,6 +69,11 @@ Provide a structured snapshot of the project’s languages, frameworks, architec
 | `Gemfile` with `rails`               | Rails         | High       |
 | `go.mod` + `gin` import              | Gin (Go)      | Medium     |
 | `nx.json` / `turbo.json`             | Monorepo tool | Medium     |
+| `Dockerfile` present                  | Docker        | High       |
+| `docker-compose.yml` present          | Docker Compose| High       |
+| `k8s/` directory or `.yaml` manifests| Kubernetes    | High       |
+| `helm/` directory or `Chart.yaml`    | Helm Charts   | High       |
+| `.kubeconfig` or `kubectl` references | Kubernetes    | Medium     |
 
 ---
 
