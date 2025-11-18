@@ -50,12 +50,16 @@ Check system context for available agents. Categories include:
 - **Orchestrators**: planning, analysis
 - **Core**: review, performance, documentation  
 - **Framework-specific**: Django, Rails, React, Vue specialists
+- **Database**: database-expert for SQL, PostgreSQL, SQLite, MySQL, and database operations
+- **Mobile**: kotlin-android-expert for Kotlin and Android development
 - **Deploy**: docker-expert, kubernetes-expert for containerization and orchestration
 - **Universal**: generic fallbacks
 
 Selection rules:
 - Prefer specific over generic (django-backend-expert > backend-developer)
 - Match technology exactly (Django API → django-api-developer)
+- Use database-expert for all SQL, PostgreSQL, SQLite, MySQL, and database design tasks
+- Use kotlin-android-expert for Kotlin and Android mobile app development
 - Use deploy agents for containerization, Docker, and Kubernetes tasks
 - Use universal agents only when no specialist exists
 
@@ -99,6 +103,8 @@ Task 7: Integrate search → AGENT: django-api-developer
 
 **Full-Stack**: analyze → backend → API → frontend → integrate → review
 **API-Only**: design → implement → authenticate → document
+**Database**: design schema → database-expert → optimize queries → migrations
+**Mobile**: kotlin-android-expert → architecture → UI → data layer → testing
 **Performance**: analyze → optimize queries → add caching → measure
 **Legacy**: explore → document → plan → refactor
 **Deployment**: build → docker-expert → kubernetes-expert → verify → monitor

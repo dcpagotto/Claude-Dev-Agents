@@ -69,6 +69,11 @@ Provide a structured snapshot of the project’s languages, frameworks, architec
 | `Gemfile` with `rails`               | Rails         | High       |
 | `go.mod` + `gin` import              | Gin (Go)      | Medium     |
 | `nx.json` / `turbo.json`             | Monorepo tool | Medium     |
+| `build.gradle` or `build.gradle.kts` | Android/Kotlin| High       |
+| `AndroidManifest.xml` present        | Android       | High       |
+| `app/src/main/kotlin/` directory     | Android/Kotlin| High       |
+| `*.db` or `*.sqlite` files           | SQLite        | High       |
+| `schema.sql` or migration files      | Database      | Medium     |
 | `Dockerfile` present                  | Docker        | High       |
 | `docker-compose.yml` present          | Docker Compose| High       |
 | `k8s/` directory or `.yaml` manifests| Kubernetes    | High       |

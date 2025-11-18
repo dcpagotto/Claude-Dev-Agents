@@ -2,16 +2,16 @@
 
 **Data de Indexação:** 2024  
 **Versão do Projeto:** Experimental  
-**Total de Agentes:** 26 especializados
+**Total de Agentes:** 28 especializados
 
 ---
 
 ## 📋 Sumário Executivo
 
-Este projeto é uma coleção de **26 agentes especializados de IA** que estendem as capacidades do Claude Code através de orquestração inteligente e expertise em domínios específicos. Os agentes trabalham juntos como uma equipe de desenvolvimento, cada um com expertise específica e padrões de delegação.
+Este projeto é uma coleção de **28 agentes especializados de IA** que estendem as capacidades do Claude Code através de orquestração inteligente e expertise em domínios específicos. Os agentes trabalham juntos como uma equipe de desenvolvimento, cada um com expertise específica e padrões de delegação.
 
 ### Características Principais
-- **26 agentes especializados** organizados em 4 categorias
+- **28 agentes especializados** organizados em 4 categorias
 - **Sistema de orquestração** com tech-lead-orchestrator
 - **Suporte multi-framework**: Django, Rails, Laravel, React, Vue
 - **Agentes de deploy**: Docker e Kubernetes para containerização e orquestração
@@ -89,7 +89,7 @@ Agentes fundamentais para qualidade e análise:
 
 ---
 
-### 3. Specialized Agents (15 agentes)
+### 3. Specialized Agents (17 agentes)
 **Localização:** `agents/specialized/`
 
 Agentes especializados por framework/tecnologia:
@@ -171,6 +171,35 @@ Agentes especializados por framework/tecnologia:
 - Kubernetes: Pod orchestration, Services, Ingress, ConfigMaps, Secrets, HPA, Helm
 - Remote deployment: SSH connectivity verification, credential management
 - Container registries: Image building, pushing, and distribution
+
+#### 3.8 Database (1 agente)
+**Localização:** `agents/specialized/database/`
+
+| Agente | Arquivo | Função Principal |
+|--------|---------|------------------|
+| **database-expert** | `database-expert.md` | Especialista em SQL, PostgreSQL, SQLite, MySQL, design de banco de dados, otimização de queries, migrações e administração de bancos de dados |
+
+**Expertise:**
+- SQL: PostgreSQL, SQLite, MySQL/MariaDB, queries otimizadas, window functions, CTEs
+- Database Design: Normalização, schema design, indexing strategies, partitioning
+- Performance: Query profiling, index optimization, connection pooling, caching
+- Migrations: Schema migrations, data migrations, version control, zero-downtime deployments
+- Advanced: Stored procedures, full-text search, JSON support, replication, high availability
+
+#### 3.9 Android (1 agente)
+**Localização:** `agents/specialized/android/`
+
+| Agente | Arquivo | Função Principal |
+|--------|---------|------------------|
+| **kotlin-android-expert** | `kotlin-android-expert.md` | Especialista em Kotlin e desenvolvimento Android, incluindo Jetpack Compose, MVVM, Material Design, Android SDK e arquitetura mobile |
+
+**Expertise:**
+- Kotlin: Coroutines, Flow, sealed classes, null safety, functional programming
+- Android SDK: Activities, Fragments, Jetpack Compose, View System, AndroidX libraries
+- Architecture: MVVM, Clean Architecture, MVI, Repository pattern, Dependency Injection
+- UI/UX: Material Design 3, Jetpack Compose, XML layouts, responsive design, accessibility
+- Data: Room Database, DataStore, Retrofit, OkHttp, WorkManager
+- Performance: Memory management, UI optimization, background processing, image loading
 
 ---
 
@@ -334,7 +363,9 @@ tools: Read, Grep, Glob, Bash  # Apenas ferramentas read-only para segurança
 
 - **Orchestrators:** 3 agentes
 - **Core:** 4 agentes
-- **Specialized:** 15 agentes
+- **Specialized:** 17 agentes
+  - Android: 1 (kotlin-android-expert)
+  - Database: 1 (database-expert)
   - Django: 3
   - Deploy: 2 (docker-expert, kubernetes-expert)
   - Laravel: 2
@@ -344,7 +375,7 @@ tools: Read, Grep, Glob, Bash  # Apenas ferramentas read-only para segurança
   - Python: 10 (inclui django-expert separado)
 - **Universal:** 4 agentes
 
-**Total:** 26 agentes especializados
+**Total:** 28 agentes especializados
 
 ### Arquivos de Documentação
 
@@ -415,6 +446,8 @@ code-reviewer → documentation-specialist
 - **Backend:** `django-backend-expert`, `laravel-backend-expert`, `rails-backend-expert`, `backend-developer`
 - **Frontend:** `react-component-architect`, `vue-component-architect`, `frontend-developer`, `tailwind-css-expert`
 - **API:** `django-api-developer`, `rails-api-developer`, `api-architect`
+- **Database:** `database-expert`, `django-orm-expert`, `laravel-eloquent-expert`, `rails-activerecord-expert`
+- **Mobile:** `kotlin-android-expert`
 - **Deploy:** `docker-expert`, `kubernetes-expert`, `devops-cicd-expert`
 - **Qualidade:** `code-reviewer`, `performance-optimizer`, `code-archaeologist`
 - **Documentação:** `documentation-specialist`
@@ -426,6 +459,8 @@ code-reviewer → documentation-specialist
 - **Ruby/Rails:** `rails-backend-expert`, `rails-api-developer`, `rails-activerecord-expert`
 - **JavaScript/React:** `react-component-architect`, `react-nextjs-expert`
 - **JavaScript/Vue:** `vue-component-architect`, `vue-nuxt-expert`, `vue-state-manager`
+- **Database/SQL:** `database-expert`, `django-orm-expert`, `laravel-eloquent-expert`, `rails-activerecord-expert`
+- **Kotlin/Android:** `kotlin-android-expert`
 
 ---
 

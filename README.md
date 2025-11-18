@@ -87,7 +87,7 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 - **[Project Analyst](agents/orchestrators/project-analyst.md)** - Technology stack detection specialist who enables intelligent agent routing
 - **[Team Configurator](agents/orchestrators/team-configurator.md)** - AI team setup expert who detects your stack and configures optimal agent mappings
 
-### 💼 Framework Specialists (13 agents)
+### 💼 Framework Specialists (15 agents)
 - **Laravel (2 agents)**
   - **[Backend Expert](agents/specialized/laravel/laravel-backend-expert.md)** - Comprehensive Laravel development with MVC, services, and Eloquent patterns
   - **[Eloquent Expert](agents/specialized/laravel/laravel-eloquent-expert.md)** - Advanced ORM optimization, complex queries, and database performance
@@ -107,6 +107,12 @@ The @agent-team-configurator automatically sets up your perfect AI development t
   - **[Nuxt Expert](agents/specialized/vue/vue-nuxt-expert.md)** - SSR, SSG, and full-stack Nuxt applications
   - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state architecture
 
+### 🗄️ Database Specialist (1 agent)
+- **[Database Expert](agents/specialized/database/database-expert.md)** - SQL, PostgreSQL, SQLite, MySQL, database design, query optimization, migrations, and database administration
+
+### 📱 Mobile Specialist (1 agent)
+- **[Kotlin & Android Expert](agents/specialized/android/kotlin-android-expert.md)** - Kotlin language, Android SDK, Jetpack Compose, MVVM architecture, Material Design, and mobile app development
+
 ### 🚀 Deploy Specialists (2 agents)
 - **[Docker Expert](agents/specialized/deploy/docker-expert.md)** - Containerization, Docker Compose, multi-stage builds, and remote deployment via SSH
 - **[Kubernetes Expert](agents/specialized/deploy/kubernetes-expert.md)** - Cluster management, deployments, Helm charts, and cloud-native orchestration
@@ -123,7 +129,7 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 - **[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
 - **[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive READMEs, API specs, and technical documentation
 
-**Total: 26 specialized agents** working together to build your projects!
+**Total: 28 specialized agents** working together to build your projects!
 
 [Browse all agents →](agents/)
 
