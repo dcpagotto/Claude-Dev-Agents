@@ -51,7 +51,7 @@ cp -r awesome-claude-agents/agents ~/.claude/agents/awesome-claude-agents
 ### 2. Verify Installation
 ```bash
 claude /agents
-# Should show all 24 agents.
+# Should show all 38 agents.
 ```
 
 ### 3. Initialize Your Project
@@ -87,7 +87,7 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 - **[Project Analyst](agents/orchestrators/project-analyst.md)** - Technology stack detection specialist who enables intelligent agent routing
 - **[Team Configurator](agents/orchestrators/team-configurator.md)** - AI team setup expert who detects your stack and configures optimal agent mappings
 
-### 💼 Framework Specialists (15 agents)
+### 💼 Framework & Language Specialists (27 agents)
 - **Laravel (2 agents)**
   - **[Backend Expert](agents/specialized/laravel/laravel-backend-expert.md)** - Comprehensive Laravel development with MVC, services, and Eloquent patterns
   - **[Eloquent Expert](agents/specialized/laravel/laravel-eloquent-expert.md)** - Advanced ORM optimization, complex queries, and database performance
@@ -106,6 +106,17 @@ The @agent-team-configurator automatically sets up your perfect AI development t
   - **[Component Architect](agents/specialized/vue/vue-component-architect.md)** - Vue 3 Composition API and component patterns
   - **[Nuxt Expert](agents/specialized/vue/vue-nuxt-expert.md)** - SSR, SSG, and full-stack Nuxt applications
   - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state architecture
+- **Python Ecosystem (10 agents)**
+  - **[Python Expert](agents/specialized/python/python-expert.md)** - Core Python 3.12+ development, type hints, project architecture
+  - **[Python Async Expert](agents/specialized/python/python-async-expert.md)** - Asyncio, Celery, event-driven architecture
+  - **[Python API Expert](agents/specialized/python/python-api-expert.md)** - Flask APIs, JWT/RBAC auth, RESTful patterns
+  - **[FastAPI Expert](agents/specialized/python/fastapi-expert.md)** - High-performance async APIs with FastAPI and Pydantic V2
+  - **[ML & Data Expert](agents/specialized/python/ml-data-expert.md)** - Machine Learning, data science, scikit-learn, TensorFlow, PyTorch
+  - **[Testing Expert](agents/specialized/python/testing-expert.md)** - Python testing, pytest, test automation and quality assurance
+  - **[Security Expert](agents/specialized/python/security-expert.md)** - Python security, cryptography, vulnerability assessment
+  - **[Performance Expert](agents/specialized/python/performance-expert.md)** - Python performance optimization, profiling, concurrency
+  - **[DevOps/CI-CD Expert](agents/specialized/python/devops-cicd-expert.md)** - Python DevOps, CI/CD, deployment automation
+  - **[Web Scraping Expert](agents/specialized/python/web-scraping-expert.md)** - Web scraping, data extraction, automation
 
 ### 🗄️ Database Specialist (1 agent)
 - **[Database Expert](agents/specialized/database/database-expert.md)** - SQL, PostgreSQL, SQLite, MySQL, database design, query optimization, migrations, and database administration
@@ -129,7 +140,7 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 - **[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
 - **[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive READMEs, API specs, and technical documentation
 
-**Total: 28 specialized agents** working together to build your projects!
+**Total: 38 specialized agents** working together to build your projects!
 
 [Browse all agents →](agents/)
 

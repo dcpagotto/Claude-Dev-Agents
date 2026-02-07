@@ -2,16 +2,16 @@
 
 **Data de Indexação:** 2024  
 **Versão do Projeto:** Experimental  
-**Total de Agentes:** 28 especializados
+**Total de Agentes:** 38 especializados
 
 ---
 
 ## 📋 Sumário Executivo
 
-Este projeto é uma coleção de **28 agentes especializados de IA** que estendem as capacidades do Claude Code através de orquestração inteligente e expertise em domínios específicos. Os agentes trabalham juntos como uma equipe de desenvolvimento, cada um com expertise específica e padrões de delegação.
+Este projeto é uma coleção de **38 agentes especializados de IA** que estendem as capacidades do Claude Code através de orquestração inteligente e expertise em domínios específicos. Os agentes trabalham juntos como uma equipe de desenvolvimento, cada um com expertise específica e padrões de delegação.
 
 ### Características Principais
-- **28 agentes especializados** organizados em 4 categorias
+- **38 agentes especializados** organizados em 4 categorias
 - **Sistema de orquestração** com tech-lead-orchestrator
 - **Suporte multi-framework**: Django, Rails, Laravel, React, Vue
 - **Agentes de deploy**: Docker e Kubernetes para containerização e orquestração
@@ -27,7 +27,7 @@ Claude-Dev-Agents/
 ├── agents/                          # Todos os agentes especializados
 │   ├── core/                        # Agentes fundamentais (4 agentes)
 │   ├── orchestrators/               # Orquestradores (3 agentes)
-│   ├── specialized/                  # Agentes por framework (15 agentes)
+│   ├── specialized/                  # Agentes por framework (27 agentes)
 │   │   ├── django/                  # Django (3 agentes)
 │   │   ├── deploy/                  # Deploy (2 agentes)
 │   │   ├── laravel/                 # Laravel (2 agentes)
@@ -43,6 +43,8 @@ Claude-Dev-Agents/
 ├── CLAUDE.md                        # Configuração principal para Claude Code
 ├── CONTRIBUTING.md                  # Guia de contribuição
 ├── LICENSE                          # Licença MIT
+├── examples/                        # Exemplos de workflows multi-agente
+├── tests/                           # Scripts de validação
 └── README.md                        # Documentação principal do projeto
 ```
 
@@ -89,7 +91,7 @@ Agentes fundamentais para qualidade e análise:
 
 ---
 
-### 3. Specialized Agents (17 agentes)
+### 3. Specialized Agents (27 agentes)
 **Localização:** `agents/specialized/`
 
 Agentes especializados por framework/tecnologia:
@@ -148,15 +150,16 @@ Agentes especializados por framework/tecnologia:
 
 | Agente | Arquivo | Função Principal |
 |--------|---------|------------------|
-| **python-expert** | `python-expert.md` | Expertise geral em Python |
-| **django-expert** | `django-expert.md` | Especialista Django |
-| **fastapi-expert** | `fastapi-expert.md` | Desenvolvimento com FastAPI |
-| **ml-data-expert** | `ml-data-expert.md` | Machine Learning e análise de dados |
-| **web-scraping-expert** | `web-scraping-expert.md` | Web scraping e extração de dados |
-| **testing-expert** | `testing-expert.md` | Testes automatizados |
-| **security-expert** | `security-expert.md` | Segurança em Python |
-| **performance-expert** | `performance-expert.md` | Otimização de performance |
-| **devops-cicd-expert** | `devops-cicd-expert.md` | DevOps e CI/CD |
+| **python-expert** | `python-expert.md` | Core Python 3.12+ development, type hints, project architecture |
+| **python-async-expert** | `python-async-expert.md` | Asyncio, Celery, event-driven architecture |
+| **python-api-expert** | `python-api-expert.md` | Flask APIs, JWT/RBAC auth, RESTful patterns |
+| **fastapi-expert** | `fastapi-expert.md` | High-performance async APIs with FastAPI and Pydantic V2 |
+| **ml-data-expert** | `ml-data-expert.md` | Machine Learning, data science, scikit-learn, TensorFlow, PyTorch |
+| **testing-expert** | `testing-expert.md` | Python testing, pytest, test automation and quality assurance |
+| **security-expert** | `security-expert.md` | Python security, cryptography, vulnerability assessment |
+| **performance-expert** | `performance-expert.md` | Python performance optimization, profiling, concurrency |
+| **devops-cicd-expert** | `devops-cicd-expert.md` | Python DevOps, CI/CD, deployment automation |
+| **web-scraping-expert** | `web-scraping-expert.md` | Web scraping, data extraction, automation |
 
 #### 3.7 Deploy (2 agentes)
 **Localização:** `agents/specialized/deploy/`
@@ -363,7 +366,7 @@ tools: Read, Grep, Glob, Bash  # Apenas ferramentas read-only para segurança
 
 - **Orchestrators:** 3 agentes
 - **Core:** 4 agentes
-- **Specialized:** 17 agentes
+- **Specialized:** 27 agentes
   - Android: 1 (kotlin-android-expert)
   - Database: 1 (database-expert)
   - Django: 3
@@ -372,10 +375,10 @@ tools: Read, Grep, Glob, Bash  # Apenas ferramentas read-only para segurança
   - Rails: 3
   - React: 2
   - Vue: 3
-  - Python: 10 (inclui django-expert separado)
+  - Python: 10
 - **Universal:** 4 agentes
 
-**Total:** 28 agentes especializados
+**Total:** 38 agentes especializados
 
 ### Arquivos de Documentação
 
@@ -454,7 +457,7 @@ code-reviewer → documentation-specialist
 
 ### Por Stack Tecnológico
 
-- **Python/Django:** `python-expert`, `django-expert`, `django-backend-expert`, `django-api-developer`, `django-orm-expert`, `fastapi-expert`
+- **Python/Django:** `python-expert`, `python-async-expert`, `python-api-expert`, `fastapi-expert`, `ml-data-expert`, `django-backend-expert`, `django-api-developer`, `django-orm-expert`
 - **PHP/Laravel:** `laravel-backend-expert`, `laravel-eloquent-expert`
 - **Ruby/Rails:** `rails-backend-expert`, `rails-api-developer`, `rails-activerecord-expert`
 - **JavaScript/React:** `react-component-architect`, `react-nextjs-expert`
