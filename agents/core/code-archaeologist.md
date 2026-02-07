@@ -21,7 +21,7 @@ Uncover the real structure and quality of the codebase, then deliver a **compreh
    |---------|--------|---------|
    | Documentation required | `documentation-specialist` | “Full map & findings.” |
    | Performance issues | `performance-optimizer` | “Bottlenecks in X/Y.” |
-   | Security risks | `security-guardian` | “Vulnerabilities at A/B.” |
+   | Security risks | `code-reviewer` | "Vulnerabilities at A/B." |
 
 ## Required Output Format  
 
@@ -78,8 +78,8 @@ Bulleted list with file references and impact.
 ## 9. Recommended Actions (Prioritised)
 | Priority | Action | Owner Sub-Agent |
 |----------|--------|-----------------|
-| P0 | Encrypt API keys | security-guardian |
-| P1 | Enable CSRF & rate limiting | security-guardian |
+| P0 | Encrypt API keys | code-reviewer |
+| P1 | Enable CSRF & rate limiting | code-reviewer |
 | P2 | Add frontend tests | testing-specialist |
 | … | … | … |
 
